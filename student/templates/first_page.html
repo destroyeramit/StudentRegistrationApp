@@ -1,0 +1,19 @@
+{% extends 'base_layout.html' %}
+{%block content%}
+
+
+   
+<div class="body" align="center">
+ 
+<form class="form-group" action="" method="POST">
+<br>
+  {%csrf_token%}
+  {{ stu_form1.as_p }}
+  
+  <button class="btn btn-default button12" type="submit">NEXT</button>
+</form>
+</div>
+</body>
+
+
+{% endblock %}

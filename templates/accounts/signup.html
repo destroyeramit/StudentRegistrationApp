@@ -1,0 +1,12 @@
+{% extends 'base_layout.html' %}
+{%block content%}
+<div class="body" align="center">
+<h1>signup<h1>
+    <form class="form-group" action="/accounts/signup/" method="post">
+        {% csrf_token %}
+        {{form}}
+        <button class="btn btn-default button12" type="submit">SIGNUP</button>
+    </form>
+</div>
+</body>
+{% endblock %}
